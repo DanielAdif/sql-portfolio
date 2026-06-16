@@ -19,7 +19,7 @@ def main():
         email        TEXT NOT NULL,
         country      TEXT NOT NULL,
         signup_date  TEXT NOT NULL,
-        segment      TEXT NOT NULL          -- retail | wholesale | enterprise
+        segment      TEXT NOT NULL 
     );
 
     CREATE TABLE products (
@@ -34,7 +34,7 @@ def main():
         order_id          INTEGER PRIMARY KEY,
         customer_id       INTEGER NOT NULL REFERENCES customers(customer_id),
         order_date        TEXT NOT NULL,
-        status            TEXT NOT NULL,    -- completed | cancelled | processing
+        status            TEXT NOT NULL,
         shipping_country  TEXT NOT NULL
     );
 
