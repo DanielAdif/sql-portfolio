@@ -1,8 +1,3 @@
-"""
-seed.py — Generate the ecommerce.db SQLite dataset.
-Run once: python data/seed.py
-"""
-
 import sqlite3
 import random
 from datetime import date, timedelta
