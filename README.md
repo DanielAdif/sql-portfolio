@@ -18,8 +18,6 @@ sql-portfolio/
 │   └── q03_to_q10_business_queries.sql
 ├── results/
 │   └── query_results.json   ← raw output captured from each query
-├── docs/
-│   └── erd.md               ← entity-relationship description
 └── README.md
 ```
 
@@ -120,16 +118,16 @@ customers ──< orders ──< order_items >── products
 | Q10 | What are the top 3 products within each category? | `DENSE_RANK() OVER PARTITION BY` |
 
 ### Answers
-Q1: Beauty leads on raw revenue but Books wins on margin (54.4%). Wholesale strategy should prioritise Books for highest profit-per-dollar.
-Q2: Revenue grows organically through 2021-2023 with high volatility in early months (small base effect). By 2023, monthly revenue stabilised at  around 30-40k with single-digit MoM swings — a sign of business maturity.
-Q3: Enterprise Q4 customers average 6.8 orders and around $12k LTV 8x higher than Q1. Retention programs should target Q2–Q3 customers to push them into the top quartile.
-Q4: Top 20 customers (~6.7% of base) account for roughly 22% of total revenue — a mild Pareto effect. All top 3 are wholesale segment, confirming wholesale accounts need priority account management.
-Q5: Electronics has the highest return rate (13%), expected given complexity and expectation mismatch. Beauty is the lowest, suggesting strong product descriptions. Investigate Electronics listings for accuracy improvements.
-Q6: Germany (+389%) and Singapore (+332%) are the fastest-growing markets despite smaller absolute bases — prime candidates for localised marketing investment.
-Q7: Repeat buyers drive 96% of enterprise revenue but generate 4.7x the revenue per customer vs one-time buyers. Acquisition cost is only justified if the customer converts to repeat — focus churn prevention on customers after their first order.
-Q8: US wholesale leads with $2,091 average order value. Enterprise customers in Germany and UK have high basket sizes despite fewer orders high-value, low-frequency buyers who need VIP treatment.
-Q9: Retention drops sharply after the first month (~20-40% by month 3). The Jan 2022 cohort shows a retention spike at month 6. Cohort analysis like this should drive email flow design.
-Q10: Top performers in each category are high-priced items ($350-$400), validating the premium pricing strategy. However, margin varies widely (48-58%) within the same category — a signal to review cost structures on lower-margin top sellers.
+- Q1: Beauty leads on raw revenue but Books wins on margin (54.4%). Wholesale strategy should prioritise Books for highest profit-per-dollar.
+- Q2: Revenue grows organically through 2021-2023 with high volatility in early months (small base effect). By 2023, monthly revenue stabilised at  around 30-40k with single-digit MoM swings — a sign of business maturity.
+- Q3: Enterprise Q4 customers average 6.8 orders and around $12k LTV 8x higher than Q1. Retention programs should target Q2–Q3 customers to push them into the top quartile.
+- Q4: Top 20 customers (~6.7% of base) account for roughly 22% of total revenue — a mild Pareto effect. All top 3 are wholesale segment, confirming wholesale accounts need priority account management.
+- Q5: Electronics has the highest return rate (13%), expected given complexity and expectation mismatch. Beauty is the lowest, suggesting strong product descriptions. Investigate Electronics listings for accuracy improvements.
+- Q6: Germany (+389%) and Singapore (+332%) are the fastest-growing markets despite smaller absolute bases — prime candidates for localised marketing investment.
+- Q7: Repeat buyers drive 96% of enterprise revenue but generate 4.7x the revenue per customer vs one-time buyers. Acquisition cost is only justified if the customer converts to repeat — focus churn prevention on customers after their first order.
+- Q8: US wholesale leads with $2,091 average order value. Enterprise customers in Germany and UK have high basket sizes despite fewer orders high-value, low-frequency buyers who need VIP treatment.
+- Q9: Retention drops sharply after the first month (~20-40% by month 3). The Jan 2022 cohort shows a retention spike at month 6. Cohort analysis like this should drive email flow design.
+- Q10: Top performers in each category are high-priced items ($350-$400), validating the premium pricing strategy. However, margin varies widely (48-58%) within the same category — a signal to review cost structures on lower-margin top sellers.
 
 ---
 
